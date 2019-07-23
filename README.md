@@ -19,14 +19,14 @@ The 1 (or the root) and these corresponding notes are selected because they are 
 
 We did not want to only let you play major chords so we added the flat and sharp equivalent rows: b3 b5 b7 b9 b11 b13 and #3 #5 #7 #9 #11 #13. (Note: we understand that it is not common to refer to the 4 as a #3 or the 8 as #7, but this is more to emphasize the relationships). This allows one to play minor chords and other chords in the exact same way as well. We also added some other common notes like the 2 b2 12 14 etc. We also added octave buttons and mode changes to switch the key selectors. This ended up with this final layout:
 ```
-12  14
-4  #5   8   #9  #11 b14
+                       12    14
+      4  #5   8   #9  #11   b14
 
-2     3    5   7    9  11   13
+2     3    5   7    9  11    13
 
-b2    b3   b5  b7   b9  10  b13
+b2    b3   b5  b7   b9 10   b13
 
-1               6          #12
+1               6           #12
 
 ```
 
