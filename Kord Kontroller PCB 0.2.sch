@@ -4713,9 +4713,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="759.46" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="665.48" y1="-86.36" x2="652.78" y2="-86.36" width="0.1524" layer="91"/>
-<label x="655.32" y="-86.36" size="1.778" layer="95"/>
-<pinref part="U2" gate="G$1" pin="PA25/EIC/EXTINT[9]"/>
+<wire x1="665.48" y1="-83.82" x2="652.78" y2="-83.82" width="0.1524" layer="91"/>
+<label x="655.32" y="-83.82" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="PA24/EIC/EXTINT[8]"/>
 </segment>
 </net>
 <net name="D-" class="0">
@@ -4725,9 +4725,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="759.46" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="652.78" y1="-83.82" x2="665.48" y2="-83.82" width="0.1524" layer="91"/>
-<label x="655.32" y="-83.82" size="1.778" layer="95"/>
-<pinref part="U2" gate="G$1" pin="PA24/EIC/EXTINT[8]"/>
+<wire x1="652.78" y1="-86.36" x2="665.48" y2="-86.36" width="0.1524" layer="91"/>
+<label x="655.32" y="-86.36" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="PA25/EIC/EXTINT[9]"/>
 </segment>
 </net>
 <net name="LEVELSHIFT_3V" class="0">
@@ -4777,9 +4777,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="652.78" y1="-53.34" x2="665.48" y2="-53.34" width="0.1524" layer="91"/>
-<label x="652.78" y="-53.34" size="1.778" layer="95"/>
-<pinref part="U2" gate="G$1" pin="PA12/EIC/EXTINT[12]"/>
+<wire x1="777.24" y1="-27.94" x2="789.94" y2="-27.94" width="0.1524" layer="91"/>
+<label x="777.24" y="-27.94" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="PB23/EIC/EXTINT[7]"/>
 </segment>
 </net>
 <net name="N$114" class="0">
@@ -4895,9 +4895,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="652.78" y1="-55.88" x2="665.48" y2="-55.88" width="0.1524" layer="91"/>
-<label x="652.78" y="-55.88" size="1.778" layer="95"/>
-<pinref part="U2" gate="G$1" pin="PA13//EIC/EXTINT[13]"/>
+<wire x1="777.24" y1="-30.48" x2="789.94" y2="-30.48" width="0.1524" layer="91"/>
+<label x="777.24" y="-30.48" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="PB22/EIC/EXTINT[6]"/>
 </segment>
 </net>
 <net name="SWDCLK" class="0">
