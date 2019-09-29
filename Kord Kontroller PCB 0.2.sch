@@ -4607,9 +4607,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="759.46" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="665.48" y1="-83.82" x2="652.78" y2="-83.82" width="0.1524" layer="91"/>
-<label x="655.32" y="-83.82" size="1.778" layer="95"/>
-<pinref part="U2" gate="G$1" pin="PA24/EIC/EXTINT[8]"/>
+<wire x1="665.48" y1="-86.36" x2="652.78" y2="-86.36" width="0.1524" layer="91"/>
+<label x="655.32" y="-86.36" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="PA25/EIC/EXTINT[9]"/>
 </segment>
 </net>
 <net name="D-" class="0">
@@ -4619,9 +4619,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="759.46" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="652.78" y1="-86.36" x2="665.48" y2="-86.36" width="0.1524" layer="91"/>
-<label x="655.32" y="-86.36" size="1.778" layer="95"/>
-<pinref part="U2" gate="G$1" pin="PA25/EIC/EXTINT[9]"/>
+<wire x1="652.78" y1="-83.82" x2="665.48" y2="-83.82" width="0.1524" layer="91"/>
+<label x="655.32" y="-83.82" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="PA24/EIC/EXTINT[8]"/>
 </segment>
 </net>
 <net name="LEVELSHIFT_3V" class="0">
