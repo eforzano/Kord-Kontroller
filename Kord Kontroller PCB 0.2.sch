@@ -3882,6 +3882,125 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="crystal" urn="urn:adsk.eagle:library:204">
+<description>&lt;b&gt;Crystals and Crystal Resonators&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="ASF" urn="urn:adsk.eagle:footprint:12019/1" library_version="1">
+<description>&lt;b&gt;CRYSTAL CLOCK OSCILLATORS&lt;/b&gt;&lt;p&gt;
+5.0 Vdc or 3.3 Vdc - LOW PROFILE ULTRA MINIATURE CERAMIC SURFACE MOUNT&lt;br&gt;
+Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
+<wire x1="-2.2" y1="1.5" x2="2.2" y2="1.5" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="1.3" x2="2.4" y2="-1.3" width="0.2032" layer="21"/>
+<wire x1="2.2" y1="-1.5" x2="-2.2" y2="-1.5" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.3" x2="-2.4" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="-2.2" y1="1.5" x2="-2.4" y2="1.3" width="0.2032" layer="21" curve="-90"/>
+<wire x1="2.4" y1="1.3" x2="2.2" y2="1.5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-2.4" y1="-1.3" x2="-2.2" y2="-1.5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="2.2" y1="-1.5" x2="2.4" y2="-1.3" width="0.2032" layer="21" curve="-90"/>
+<circle x="-1.9" y="-0.95" radius="0.1802" width="0" layer="51"/>
+<smd name="1" x="-1.25" y="-1.15" dx="1.6" dy="1.5" layer="1"/>
+<smd name="2" x="1.25" y="-1.15" dx="1.6" dy="1.5" layer="1"/>
+<smd name="3" x="1.25" y="1.15" dx="1.6" dy="1.5" layer="1" rot="R180"/>
+<smd name="4" x="-1.25" y="1.15" dx="1.6" dy="1.5" layer="1" rot="R180"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="ASF" urn="urn:adsk.eagle:package:12096/1" type="box" library_version="1">
+<description>CRYSTAL CLOCK OSCILLATORS
+5.0 Vdc or 3.3 Vdc - LOW PROFILE ULTRA MINIATURE CERAMIC SURFACE MOUNT
+Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
+<packageinstances>
+<packageinstance name="ASF"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="QG1" urn="urn:adsk.eagle:symbol:11989/1" library_version="1">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="0" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="2.54" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="6.35" y2="0" width="0.4064" layer="94"/>
+<wire x1="6.35" y1="0" x2="-1.27" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="-5.08" x2="-1.27" y2="-3.175" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="-3.175" x2="-1.27" y2="3.175" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="3.175" x2="-1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="3.175" x2="-1.27" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="-3.175" x2="-1.27" y2="-3.175" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="0" x2="7.62" y2="0" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-4.826" y1="-0.381" x2="-4.826" y2="0.381" width="0.254" layer="94"/>
+<wire x1="-4.826" y1="0.381" x2="-2.794" y2="0.381" width="0.254" layer="94"/>
+<wire x1="-2.794" y1="0.381" x2="-2.794" y2="-0.381" width="0.254" layer="94"/>
+<wire x1="-4.826" y1="-0.381" x2="-2.794" y2="-0.381" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-1.016" x2="-3.81" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.016" x2="-2.54" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="1.016" x2="-3.81" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="-3.175" x2="-3.81" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="1.016" x2="-2.54" y2="1.016" width="0.254" layer="94"/>
+<text x="-7.62" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-6.985" y="-5.842" size="1.524" layer="95">GND</text>
+<text x="-6.985" y="4.318" size="1.524" layer="95">VCC</text>
+<text x="4.064" y="-3.556" size="1.524" layer="95">FO</text>
+<text x="3.81" y="5.588" size="1.524" layer="95">OE</text>
+<pin name="GND" x="-12.7" y="-5.08" visible="pad" length="middle" direction="pwr"/>
+<pin name="VCC" x="-12.7" y="5.08" visible="pad" length="middle" direction="pwr"/>
+<pin name="FO" x="12.7" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
+<pin name="OE" x="12.7" y="5.08" visible="pad" length="middle" direction="in" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ASF*" urn="urn:adsk.eagle:component:12136/1" prefix="Q" library_version="1">
+<description>&lt;b&gt;CRYSTAL CLOCK OSCILLATORS&lt;/b&gt;&lt;p&gt;
+5.0 Vdc or 3.3 Vdc - LOW PROFILE ULTRA MINIATURE CERAMIC SURFACE MOUNT&lt;br&gt;
+Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
+<gates>
+<gate name="G$1" symbol="QG1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ASF">
+<connects>
+<connect gate="G$1" pin="FO" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OE" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12096/1"/>
+</package3dinstances>
+<technologies>
+<technology name="1">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+<technology name="L">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="ASFLM1-50.000MHZ-C-T" constant="no"/>
+<attribute name="OC_FARNELL" value="1838931" constant="no"/>
+<attribute name="OC_NEWARK" value="99M0411" constant="no"/>
+</technology>
+<technology name="L1">
+<attribute name="MF" value="Abracon Corporation" constant="no"/>
+<attribute name="MPN" value="ASFL1-125.000MHZ-EC-T" constant="no"/>
+<attribute name="OC_FARNELL" value="1838931" constant="no"/>
+<attribute name="OC_NEWARK" value="19M1882" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4114,6 +4233,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$7" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="D29" library="microbuilder" deviceset="DIODE" device="SOD-323" value="1N4148"/>
 <part name="B29" library="microbuilder" deviceset="ELAST_10X10" device=""/>
+<part name="U$8" library="microbuilder" deviceset="GND" device=""/>
+<part name="C7" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10uF"/>
+<part name="C8" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10uF"/>
+<part name="Q1" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="ASF*" device="" package3d_urn="urn:adsk.eagle:package:12096/1" technology="L"/>
 </parts>
 <sheets>
 <sheet>
@@ -4317,6 +4440,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U$7" gate="G$1" x="805.18" y="-76.2" smashed="yes">
 <attribute name="VALUE" x="803.656" y="-75.184" size="1.27" layer="96"/>
 </instance>
+<instance part="U$8" gate="G$1" x="619.76" y="-27.94" smashed="yes" rot="R270">
+<attribute name="VALUE" x="617.22" y="-26.416" size="1.27" layer="96" rot="R270"/>
+</instance>
+<instance part="C7" gate="G$1" x="624.84" y="-33.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="626.09" y="-30.73" size="1.27" layer="95" font="vector" align="center"/>
+<attribute name="VALUE" x="626.09" y="-35.32" size="1.27" layer="96" font="vector" align="center"/>
+</instance>
+<instance part="C8" gate="G$1" x="624.84" y="-22.86" smashed="yes" rot="R270">
+<attribute name="NAME" x="626.09" y="-20.57" size="1.27" layer="95" font="vector" align="center"/>
+<attribute name="VALUE" x="626.09" y="-25.16" size="1.27" layer="96" font="vector" align="center"/>
+</instance>
+<instance part="Q1" gate="G$1" x="647.7" y="-27.94" smashed="yes">
+<attribute name="NAME" x="640.08" y="-19.685" size="1.778" layer="95"/>
+<attribute name="VALUE" x="640.08" y="-38.1" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4420,6 +4558,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$3" gate="G$1" pin="GND"/>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <wire x1="779.78" y1="-91.44" x2="777.24" y2="-91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="GND"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="622.3" y1="-27.94" x2="622.3" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="622.3" y1="-27.94" x2="622.3" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="622.3" y="-27.94"/>
+<pinref part="C8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="INT" class="0">
@@ -4842,6 +4988,37 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="784.86" y1="-5.08" x2="784.86" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="VDDCORE"/>
+</segment>
+</net>
+<net name="N$63" class="0">
+<segment>
+<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="Q1" gate="G$1" pin="VCC"/>
+<wire x1="629.92" y1="-22.86" x2="635" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$69" class="0">
+<segment>
+<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="Q1" gate="G$1" pin="GND"/>
+<wire x1="629.92" y1="-33.02" x2="635" y2="-33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="OSCIN" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="OE"/>
+<pinref part="U2" gate="G$1" pin="PA00/EIC/EXTINT[0]"/>
+<wire x1="660.4" y1="-22.86" x2="665.48" y2="-22.86" width="0.1524" layer="91"/>
+<label x="660.4" y="-22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="OSCOUT" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="FO"/>
+<pinref part="U2" gate="G$1" pin="PA01/EIC/EXTINT[1]"/>
+<wire x1="660.4" y1="-27.94" x2="660.4" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="660.4" y1="-25.4" x2="665.48" y2="-25.4" width="0.1524" layer="91"/>
+<label x="660.4" y="-25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
