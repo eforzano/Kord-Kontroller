@@ -1676,12 +1676,6 @@ Source: http://www.bourns.com/data/global/PDFs/MFMSMF.pdf</description>
 <vertex x="3.048" y="1.778"/>
 </polygon>
 </symbol>
-<symbol name="AVDD">
-<text x="-1.524" y="1.016" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="AVDD" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-<wire x1="-1.27" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="RESISTOR" prefix="R" uservalue="yes">
@@ -2737,19 +2731,6 @@ Source: http://www.bourns.com/data/global/PDFs/MFMSMF.pdf</description>
 <connect gate="G$4" pin="1" pad="4"/>
 <connect gate="G$4" pin="2" pad="5"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="AVDD">
-<description>&lt;b&gt;Analog VDD&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="AVDD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -4167,7 +4148,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J3" library="FTSH-105-01-L-DV-K" deviceset="FTSH-105-01-L-DV-K" device="J"/>
 <part name="U$1" library="microbuilder" deviceset="GND" device=""/>
 <part name="C1" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10uF"/>
-<part name="U$2" library="microbuilder" deviceset="AVDD" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="SW2" library="adafruit" deviceset="SPST_TACT" device="-KMR2"/>
 <part name="C2" library="microbuilder" deviceset="CAP_CERAMIC" device="0603_NO" value="0.1uF"/>
@@ -4183,7 +4163,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$8" library="microbuilder" deviceset="GND" device=""/>
 <part name="C7" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10uF"/>
 <part name="C8" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10uF"/>
-<part name="Q1" library="special" library_urn="urn:adsk.eagle:library:367" deviceset="XTAL/S" device="" package3d_urn="urn:adsk.eagle:package:26647/2"/>
+<part name="Q1" library="special" library_urn="urn:adsk.eagle:library:367" deviceset="XTAL/S" device="" package3d_urn="urn:adsk.eagle:package:26647/2" value="32kHz"/>
 </parts>
 <sheets>
 <sheet>
@@ -4352,7 +4332,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="787.15" y="1.29" size="1.27" layer="95" font="vector" rot="R270" align="center"/>
 <attribute name="VALUE" x="782.56" y="1.29" size="1.27" layer="96" font="vector" rot="R270" align="center"/>
 </instance>
-<instance part="U$2" gate="G$1" x="789.94" y="-5.08" smashed="yes"/>
 <instance part="GND3" gate="1" x="708.66" y="2.54" smashed="yes">
 <attribute name="VALUE" x="706.12" y="0" size="1.778" layer="96"/>
 </instance>
@@ -4511,13 +4490,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="622.3" y1="-27.94" x2="622.3" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="622.3" y="-27.94"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="INT" class="0">
-<segment>
-<wire x1="652.78" y1="-40.64" x2="665.48" y2="-40.64" width="0.1524" layer="91"/>
-<label x="655.32" y="-40.64" size="1.778" layer="95"/>
-<pinref part="U2" gate="G$1" pin="PA07/EIC/EXTINT[7]/ADC0/AIN[7]"/>
 </segment>
 </net>
 <net name="ROW1" class="0">
@@ -4732,13 +4704,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="756.92" y1="129.54" x2="762" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="X3" gate="G$1" pin="VBUS"/>
 <pinref part="PTC1" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="AVDD" class="0">
-<segment>
-<wire x1="777.24" y1="-7.62" x2="789.94" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="AVDD"/>
-<pinref part="U2" gate="G$1" pin="VDDANA"/>
 </segment>
 </net>
 <net name="ROW4" class="0">
