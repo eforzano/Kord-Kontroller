@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3085,72 +3085,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="special" urn="urn:adsk.eagle:library:367">
-<description>&lt;b&gt;Special Devices&lt;/b&gt;&lt;p&gt;
-7-segment displays, switches, heatsinks, crystals, transformers, etc.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="QS" urn="urn:adsk.eagle:footprint:26549/1" library_version="2">
-<description>&lt;B&gt;CRYSTAL&lt;/B&gt;</description>
-<wire x1="-3.429" y1="-2.286" x2="3.429" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="3.429" y1="2.286" x2="-3.429" y2="2.286" width="0.1524" layer="21"/>
-<wire x1="-3.429" y1="-1.778" x2="3.429" y2="-1.778" width="0.0508" layer="21"/>
-<wire x1="3.429" y1="1.778" x2="-3.429" y2="1.778" width="0.0508" layer="21"/>
-<wire x1="3.429" y1="1.778" x2="3.429" y2="-1.778" width="0.0508" layer="21" curve="-180"/>
-<wire x1="3.429" y1="2.286" x2="3.429" y2="-2.286" width="0.1524" layer="21" curve="-180"/>
-<wire x1="-3.429" y1="2.286" x2="-3.429" y2="-2.286" width="0.1524" layer="21" curve="180"/>
-<wire x1="-3.429" y1="1.778" x2="-3.429" y2="-1.778" width="0.0508" layer="21" curve="180"/>
-<pad name="1" x="-2.54" y="0" drill="0.6096" shape="long" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="0.6096" shape="long" rot="R90"/>
-<text x="-5.08" y="-3.937" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-5.08" y="2.667" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="QS" urn="urn:adsk.eagle:package:26647/2" type="model" library_version="2">
-<description>CRYSTAL</description>
-<packageinstances>
-<packageinstance name="QS"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="XTAL" urn="urn:adsk.eagle:symbol:26547/1" library_version="2">
-<wire x1="-1.27" y1="2.54" x2="1.397" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="1.397" y1="2.54" x2="1.397" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.397" y1="-2.54" x2="-1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="2.54" x2="-1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="2.3368" y1="2.54" x2="2.3368" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="-2.286" y1="2.54" x2="-2.286" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-5.08" y="3.81" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="XTAL/S" urn="urn:adsk.eagle:component:26672/2" prefix="Q" uservalue="yes" library_version="2">
-<description>&lt;B&gt;CRYSTAL&lt;/B&gt;</description>
-<gates>
-<gate name="G$1" symbol="XTAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="QS">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:26647/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Connectors">
 <description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
 This library contains electrically-functional connectors. 
@@ -3703,6 +3637,98 @@ Manufacturer: Hirose&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="ECS-.327-12.5-17X-TR">
+<packages>
+<package name="XTAL_ECS-.327-12.5-17X-TR">
+<wire x1="4" y1="1.9" x2="4" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="-4" y1="-1.9" x2="-4" y2="1.9" width="0.127" layer="21"/>
+<wire x1="-4" y1="1.9" x2="4" y2="1.9" width="0.127" layer="51"/>
+<wire x1="4" y1="1.9" x2="4" y2="-1.9" width="0.127" layer="51"/>
+<wire x1="4" y1="-1.9" x2="-4" y2="-1.9" width="0.127" layer="51"/>
+<wire x1="-4" y1="-1.9" x2="-4" y2="1.9" width="0.127" layer="51"/>
+<circle x="-4.45" y="-1.596" radius="0.05" width="0.25" layer="21"/>
+<wire x1="-4.25" y1="2.15" x2="-3.65" y2="2.15" width="0.05" layer="39"/>
+<wire x1="-3.65" y1="2.15" x2="-3.65" y2="2.8" width="0.05" layer="39"/>
+<wire x1="-3.65" y1="2.8" x2="3.65" y2="2.8" width="0.05" layer="39"/>
+<wire x1="3.65" y1="2.8" x2="3.65" y2="2.15" width="0.05" layer="39"/>
+<wire x1="3.65" y1="2.15" x2="4.25" y2="2.15" width="0.05" layer="39"/>
+<wire x1="4.25" y1="2.15" x2="4.25" y2="-2.15" width="0.05" layer="39"/>
+<wire x1="4.25" y1="-2.15" x2="3.65" y2="-2.15" width="0.05" layer="39"/>
+<wire x1="3.65" y1="-2.15" x2="3.65" y2="-2.8" width="0.05" layer="39"/>
+<wire x1="3.65" y1="-2.8" x2="-3.65" y2="-2.8" width="0.05" layer="39"/>
+<wire x1="-3.65" y1="-2.8" x2="-3.65" y2="-2.15" width="0.05" layer="39"/>
+<wire x1="-3.65" y1="-2.15" x2="-4.25" y2="-2.15" width="0.05" layer="39"/>
+<wire x1="-4.25" y1="-2.15" x2="-4.25" y2="2.15" width="0.05" layer="39"/>
+<text x="-3.64103125" y="3.000609375" size="0.751659375" layer="25">&gt;NAME</text>
+<text x="-3.6373" y="-3.6293" size="0.7508875" layer="27">&gt;VALUE</text>
+<wire x1="-3.99" y1="1.9" x2="-3.654" y2="1.9" width="0.127" layer="21"/>
+<wire x1="-3.99" y1="-1.9" x2="-3.654" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="3.98" y1="-1.89" x2="3.98" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="3.98" y1="-1.9" x2="3.654" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="3.97" y1="1.9" x2="3.654" y2="1.9" width="0.127" layer="21"/>
+<circle x="-4.45" y="-1.596" radius="0.05" width="0.25" layer="51"/>
+<smd name="1" x="-2.75" y="-1.6" dx="1.3" dy="1.9" layer="1" rot="R180"/>
+<smd name="2" x="2.75" y="-1.6" dx="1.3" dy="1.9" layer="1" rot="R180"/>
+<smd name="3" x="2.75" y="1.6" dx="1.3" dy="1.9" layer="1" rot="R180"/>
+<smd name="4" x="-2.75" y="1.6" dx="1.3" dy="1.9" layer="1" rot="R180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ECS-.327-12.5-17X-TR">
+<text x="-5.09686875" y="5.606559375" size="1.783909375" layer="95">&gt;NAME</text>
+<text x="-5.344559375" y="-7.63508125" size="1.78151875" layer="96">&gt;VALUE</text>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="0.381" x2="-4.064" y2="0.381" width="0.254" layer="94"/>
+<wire x1="-4.064" y1="0.381" x2="-4.064" y2="-0.381" width="0.254" layer="94"/>
+<wire x1="-4.064" y1="-0.381" x2="-1.016" y2="-0.381" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-0.381" x2="-1.016" y2="0.381" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-1.016" x2="-4.318" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="1.016" x2="-4.318" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.016" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<pin name="4" x="-10.16" y="-2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="1" x="-10.16" y="2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="2" x="10.16" y="2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="3" x="10.16" y="-2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ECS-.327-12.5-17X-TR" prefix="Y">
+<description>Crystal  4-SOJ, 5.50mm pitch</description>
+<gates>
+<gate name="G$1" symbol="ECS-.327-12.5-17X-TR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XTAL_ECS-.327-12.5-17X-TR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value=" 32.768kHz ±20ppm Crystal 12.5pF 50 kOhms 4-SOJ, 5.50mm pitch "/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="XC1195CT-ND"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/ecs-inc/ECS-.327-12.5-17X-TR/XC1195CT-ND/827659?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol"/>
+<attribute name="MF" value="ECS Inc."/>
+<attribute name="MP" value="ECS-.327-12.5-17X-TR"/>
+<attribute name="PACKAGE" value="4-4 ECS International"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3935,9 +3961,9 @@ Manufacturer: Hirose&lt;br&gt;
 <part name="U$8" library="microbuilder" deviceset="GND" device=""/>
 <part name="C7" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10uF"/>
 <part name="C8" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10uF"/>
-<part name="Q1" library="special" library_urn="urn:adsk.eagle:library:367" deviceset="XTAL/S" device="" package3d_urn="urn:adsk.eagle:package:26647/2" value="32kHz"/>
 <part name="J4" library="SparkFun-Connectors" deviceset="USB_MICRO-B" device="_HALF_PTH_MILL"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="Y1" library="ECS-.327-12.5-17X-TR" deviceset="ECS-.327-12.5-17X-TR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4142,16 +4168,16 @@ Manufacturer: Hirose&lt;br&gt;
 <attribute name="NAME" x="626.09" y="-20.57" size="1.27" layer="95" font="vector" align="center"/>
 <attribute name="VALUE" x="626.09" y="-25.16" size="1.27" layer="96" font="vector" align="center"/>
 </instance>
-<instance part="Q1" gate="G$1" x="647.7" y="-25.4" smashed="yes" rot="R270">
-<attribute name="NAME" x="651.51" y="-20.32" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="642.62" y="-20.32" size="1.778" layer="96" rot="R270"/>
-</instance>
 <instance part="J4" gate="J1" x="746.76" y="157.48" smashed="yes">
 <attribute name="VALUE" x="744.22" y="147.574" size="1.778" layer="96" font="vector" rot="MR180" align="top-left"/>
 <attribute name="NAME" x="744.22" y="167.894" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="GND2" gate="1" x="767.08" y="149.86" smashed="yes">
 <attribute name="VALUE" x="764.54" y="147.32" size="1.778" layer="96"/>
+</instance>
+<instance part="Y1" gate="G$1" x="642.62" y="-30.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="647.71686875" y="-36.086559375" size="1.783909375" layer="95" rot="R180"/>
+<attribute name="VALUE" x="647.964559375" y="-22.84491875" size="1.78151875" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -4682,31 +4708,29 @@ Manufacturer: Hirose&lt;br&gt;
 </net>
 <net name="OSCIN" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="PA00/EIC/EXTINT[0]"/>
 <label x="660.4" y="-22.86" size="1.778" layer="95"/>
-<pinref part="Q1" gate="G$1" pin="1"/>
-<wire x1="665.48" y1="-22.86" x2="647.7" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="647.7" y1="-22.86" x2="647.7" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="629.92" y1="-22.86" x2="635" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="647.7" y1="-20.32" x2="635" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="635" y1="-20.32" x2="635" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="647.7" y="-20.32"/>
+<pinref part="U2" gate="G$1" pin="PA00/EIC/EXTINT[0]"/>
+<wire x1="629.92" y1="-22.86" x2="652.78" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="Y1" gate="G$1" pin="4"/>
+<wire x1="652.78" y1="-22.86" x2="665.48" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="652.78" y1="-27.94" x2="652.78" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="652.78" y="-22.86"/>
 </segment>
 </net>
 <net name="OSCOUT" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="PA01/EIC/EXTINT[1]"/>
-<wire x1="660.4" y1="-30.48" x2="660.4" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="660.4" y1="-25.4" x2="665.48" y2="-25.4" width="0.1524" layer="91"/>
 <label x="660.4" y="-25.4" size="1.778" layer="95"/>
-<pinref part="Q1" gate="G$1" pin="2"/>
-<wire x1="660.4" y1="-30.48" x2="647.7" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="629.92" y1="-38.1" x2="652.78" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="652.78" y1="-38.1" x2="660.4" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="660.4" y1="-38.1" x2="660.4" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="629.92" y1="-33.02" x2="635" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="647.7" y1="-30.48" x2="635" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="635" y1="-30.48" x2="635" y2="-33.02" width="0.1524" layer="91"/>
-<junction x="647.7" y="-30.48"/>
+<wire x1="629.92" y1="-33.02" x2="629.92" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="Y1" gate="G$1" pin="1"/>
+<wire x1="652.78" y1="-33.02" x2="652.78" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="652.78" y="-38.1"/>
 </segment>
 </net>
 </nets>
