@@ -3484,12 +3484,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$13">
 <contactref element="LED3" pad="3"/>
 <contactref element="LED4" pad="1"/>
-<wire x1="225.25" y1="46.75" x2="225.25" y2="27.25" width="0.35" layer="1"/>
-<wire x1="225.25" y1="46.75" x2="217" y2="55" width="0.35" layer="1"/>
+<wire x1="225.25" y1="48.75" x2="225.25" y2="27.25" width="0.35" layer="1"/>
+<wire x1="225.25" y1="48.75" x2="220" y2="54" width="0.35" layer="1"/>
 <wire x1="233.375" y1="20.75" x2="233" y2="21.125" width="0.4064" layer="16"/>
 <wire x1="233" y1="21.125" x2="233" y2="22" width="0.4064" layer="16"/>
 <via x="233" y="22" extent="1-16" drill="0.35"/>
-<wire x1="217" y1="55" x2="217" y2="53" width="0.4064" layer="1"/>
+<wire x1="220" y1="54" x2="218" y2="54" width="0.4064" layer="1"/>
+<wire x1="218" y1="54" x2="217" y2="53" width="0.4064" layer="1"/>
 <via x="217" y="53" extent="1-16" drill="0.35"/>
 <wire x1="217" y1="53" x2="217" y2="53.875" width="0.4064" layer="16"/>
 <wire x1="217" y1="53.875" x2="216.625" y2="54.25" width="0.4064" layer="16"/>
@@ -3757,13 +3758,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="127" y="68" extent="1-16" drill="0.35"/>
 <wire x1="126.625" y1="69.25" x2="127" y2="68.875" width="0.4064" layer="16"/>
 <wire x1="127" y1="68.875" x2="127" y2="68" width="0.4064" layer="16"/>
-<wire x1="140.5" y1="19.5" x2="141.5" y2="18.5" width="0.4064" layer="1"/>
-<wire x1="143" y1="20" x2="143" y2="22" width="0.4064" layer="1"/>
-<wire x1="143" y1="20" x2="141.5" y2="18.5" width="0.4064" layer="1"/>
+<wire x1="143" y1="21" x2="143" y2="22" width="0.4064" layer="1"/>
+<wire x1="143" y1="21" x2="140.5" y2="18.5" width="0.4064" layer="1"/>
 <via x="143" y="22" extent="1-16" drill="0.35"/>
 <wire x1="143" y1="22" x2="143.375" y2="21.625" width="0.4064" layer="16"/>
 <wire x1="143.375" y1="21.625" x2="143.375" y2="20.75" width="0.4064" layer="16"/>
-<wire x1="140.5" y1="59" x2="140.5" y2="19.5" width="0.4064" layer="1"/>
+<wire x1="140.5" y1="59" x2="140.5" y2="18.5" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$41">
 <contactref element="LED25" pad="3"/>
